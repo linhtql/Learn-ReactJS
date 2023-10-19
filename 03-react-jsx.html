@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!--
+        JSX: JavaScript XML
+        JSX allows us to write HTML in React
+    -->
+
+    <script type="text/babel">
+      // Without JSX:
+
+      // const myElement = React.createElement ('h1', {}, 'I do not use JSX!');
+
+      // const root = ReactDOM.createRoot(document.getElementById('root'));
+      // root.render(myElement)
+
+      // JSX:
+
+      const myElement = <h1>I Love JSX!</h1>;
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(myElement);
+
+      // Execute the express
+      const myElement1 = <h1>React is {5 + 5} times better with JSX</h1>;
+
+      // Create a list with three list items:
+      const myElement2 = (
+        <uL>
+          <li>Apples</li>
+          <li>Bananas</li>
+          <li>Cherries</li>
+        </uL>
+      );
+
+      // The HTML code must be wrapped in ONE top level element
+      const myElement3 = (
+        <div>
+          <p>I am a paragraph.</p>
+          <p>I am a paragraph too.</p>
+        </div>
+      );
+
+      // Can "fragment" to wrap multiple lines
+      const myElement4 = (
+        <>
+          <p>I am a paragraph.</p>
+          <p>I am a paragraph too.</p>
+        </>
+      );
+
+      // Conditions
+      const x = 5;
+      let tetx = "Goodbye";
+      if (x < 10) {
+        text = "Hello";
+      }
+
+      const myElement5 = <h1>{text}</h1>
+
+      // Or
+      const x2 = 5;
+      const myElement6 = <h1>{x < 10 ? "Hello" : "Goodbye"}</h1>
+    </script>
+  </body>
+</html>
