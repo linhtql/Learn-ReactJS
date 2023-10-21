@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      // Class component
+      class Car extends React.Component {
+        render() {
+          return <h2>Hi, I am a Car!</h2>;
+        }
+      }
+      // Function component
+      function Car1() {
+        return <h2>Hi, I am a car</h2>;
+      }
+
+      // Rendering a Component
+      const container = document.getElementById("root");
+      const root = ReactDOM.createRoot(container);
+      // root.render(<Car2/>)
+
+      // Props
+      function Car2(props) {
+        return <h2>Hi, I am {props.color} a car</h2>;
+      }
+      // root.render(<Car2 color = "red"/>)
+
+      // Components in Components
+      function Garage() {
+        return (
+          <>
+            <h1>Who lives in my Garage?</h1>
+            <Car />
+          </>
+        );
+      }
+      // root.render(<Garage/>);
+
+      // Components in Files
+      // import Car3 from './Car.js'
+      // root.render(<Car3/>);
+    </script>
+  </body>
+</html>
