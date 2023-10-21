@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      // Props are arguments passed into React components
+      // Props are passed to components via HTML attributes
+
+      // Add a brand attribute to the Car element:
+      const myElement = <Car brand="Ford" />;
+
+      // The component receives the argument as a props object:
+
+      function Car(props) {
+        return <h2>I am a {props.brand}!</h2>;
+      }
+
+      // Pass Data: from one component to another
+      function Garage() {
+        return (
+          <>
+            <h1>Who lives in my garage?</h1>
+            <Car brand="Ford" />
+          </>
+        );
+
+        // React Props are read-only!! You get an error if you try to change their value.
+      }
+    </script>
+  </body>
+</html>
