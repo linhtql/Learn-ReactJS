@@ -1,0 +1,23 @@
+Hook were added to React in version 16.8
+Hooks allow us to "hook" into React features such as state and lifecycle methods
+
+Hook Rules:
+1. Can only be called inside React function components
+2. Can only be called at the top level of a components
+3. Cannot be conditional
+
+--> Hook will not work in React clas components
+
+--------------------useState --------------------
+
+The React useState Hook allows us to track state in a function components.
+State generally refers to data or properties that need to be tracking in an application
+useState accepts an initial state and returns two values:
+- The current state.
+- A function that updates the state.
+The useState Hook can be used to keep track of strings, numbers, booleans, arrays, objects,
+and any combination of these
+
+When state is updated, the entrie state gets overwritten
+If we only called setCar({color: "blue}), this would remove the brand, model, and year from our state
+--> We can use the Javascript spread operator to help us

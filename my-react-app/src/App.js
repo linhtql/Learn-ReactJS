@@ -9,9 +9,10 @@ import NoPage from "./pages/NoPage";
 import Todos from "./ReactMemo/Todo";
 import { useState } from "react";
 import Header from "./ReactCSSStyling/Header";
-import Car from "./Car/Car.js";
+// import Car from "./Car/Car.js";
 import Header1 from "./ReactSassStyling/Header1";
-
+import FavoriteColor from "./hooks/FavoriteColor";
+import Car from "./hooks/Car";
 function App() {
   // React Memo
   const [count, setCount] = useState(0);
@@ -78,7 +79,12 @@ function App() {
     Sass is a CSS pre-processor
     Sass files are executed on the server and sends CSS to the brower
     */
-    <Header1 />
+    // <Header1 />
+
+    // Hooks
+
+    // <FavoriteColor/>
+    <Car />
   );
 }
 
