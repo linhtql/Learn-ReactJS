@@ -10,6 +10,7 @@ import Todos from "./ReactMemo/Todo";
 import { useState } from "react";
 import Header from "./ReactCSSStyling/Header";
 import Car from "./Car/Car.js";
+import Header1 from "./ReactSassStyling/Header1";
 
 function App() {
   // React Memo
@@ -70,7 +71,14 @@ function App() {
     // <Header />
 
     // CSS Modules
-    <Car />
+    // <Car />
+
+    // React Sass Styling
+    /*
+    Sass is a CSS pre-processor
+    Sass files are executed on the server and sends CSS to the brower
+    */
+    <Header1 />
   );
 }
 
