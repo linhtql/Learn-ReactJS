@@ -1,0 +1,7 @@
+/* CSS Modules */
+.bigblue {
+    color: dodgerblue;
+    padding: 40px;
+    font-family: sans-serif;
+    text-align: center;
+}

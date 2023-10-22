@@ -8,6 +8,8 @@ import Blogs from "./pages/Blogs";
 import NoPage from "./pages/NoPage";
 import Todos from "./ReactMemo/Todo";
 import { useState } from "react";
+import Header from "./ReactCSSStyling/Header";
+import Car from "./Car/Car.js";
 
 function App() {
   // React Memo
@@ -42,14 +44,14 @@ function App() {
     // Using memo will cause React to skip rendering a component if its props have not changed
     // ---> this can improve perfomance
 
-    <>
-      <Todos todos={todos} />
-      <hr />
-      <div>
-        Count: {count}
-        <button onClick={increment}>+</button>
-      </div>
-    </>
+    // <>
+    //   <Todos todos={todos} />
+    //   <hr />
+    //   <div>
+    //     Count: {count}
+    //     <button onClick={increment}>+</button>
+    //   </div>
+    // </>
 
     // When the click the increment button, the Todos component re-renders
     // if this compnent was complex, it could cause perfomance issues.
@@ -58,6 +60,17 @@ function App() {
     // To fix this, we can use memo
     // Use memo to keep the Todos component from needlessly re-rendering
     // Wrap the Todos component export in memo
+
+    // React CSS Styling
+    // 1. Inline styling
+    // 2. CSS stylesheets
+    // 3. CSS Modules: do not have to worry about name conflicts (available only for the
+    // component that imported it)
+
+    // <Header />
+
+    // CSS Modules
+    <Car />
   );
 }
 
