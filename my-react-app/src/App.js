@@ -14,7 +14,8 @@ import Header1 from "./ReactSassStyling/Header1";
 import FavoriteColor from "./hooks/FavoriteColor";
 import Car from "./hooks/Car";
 import Timer from "./hooks/Timer";
-
+import Component1 from "./hooks/SolutionPassingProps";
+// import Component1 from "./hooks/PassingProps";
 
 function App() {
   // React Memo
@@ -90,7 +91,13 @@ function App() {
     // <Car />
 
     // useEffect
-    <Timer/>
+    // <Timer/>
+
+    // Passing "props" through nested components:
+    // <Component1 />
+
+    // Solution
+    <Component1 />
   );
 }
 
