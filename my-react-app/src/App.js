@@ -13,6 +13,9 @@ import Header from "./ReactCSSStyling/Header";
 import Header1 from "./ReactSassStyling/Header1";
 import FavoriteColor from "./hooks/FavoriteColor";
 import Car from "./hooks/Car";
+import Timer from "./hooks/Timer";
+
+
 function App() {
   // React Memo
   const [count, setCount] = useState(0);
@@ -84,7 +87,10 @@ function App() {
     // Hooks
 
     // <FavoriteColor/>
-    <Car />
+    // <Car />
+
+    // useEffect
+    <Timer/>
   );
 }
 
