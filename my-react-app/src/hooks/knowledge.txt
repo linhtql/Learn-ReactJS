@@ -95,3 +95,19 @@ The reducer function contains your custom state logic and the initialState can b
 generally will contain an objects
 The useReducer Hook returns the current state and a dispatch method.
 
+
+-------------------- useCallback --------------------
+The React useCallback Hook returns a memoized callback function
+"Think of memoization as caching a value so that it does not need to be recalculated"
+This allows us to isolate resource intensive functions so that they will not automatically
+run on every render:
+The useCallback Hook only runs when one of its dependencues update.
+---> This can improve perfomance
+
+The useCallback and useMemo Hooks are similar. The main difference is that useMemo returns a 
+"memoized value" and useCallback returns a "memoized function"
+
+Problem: One reason to use useCallback is to prevent a component from re-rendering unless its props
+have changed.
+
+

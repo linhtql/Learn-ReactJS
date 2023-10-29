@@ -18,6 +18,7 @@ import Component1 from "./hooks/SolutionPassingProps";
 // import Component1 from "./hooks/PassingProps";
 import UseRef from "./hooks/Component4.js";
 import CounterApp from "./hooks/CounterApp";
+import Component5 from "./hooks/Component5";
 
 function App() {
   // React Memo
@@ -105,7 +106,10 @@ function App() {
     // <UseRef/>
 
     // useReducer
-    <CounterApp/>
+    // <CounterApp/>
+
+    // useCallback
+    <Component5 />
   );
 }
 
