@@ -16,6 +16,8 @@ import Car from "./hooks/Car";
 import Timer from "./hooks/Timer";
 import Component1 from "./hooks/SolutionPassingProps";
 // import Component1 from "./hooks/PassingProps";
+import UseRef from "./hooks/Component4.js";
+import CounterApp from "./hooks/CounterApp";
 
 function App() {
   // React Memo
@@ -97,7 +99,13 @@ function App() {
     // <Component1 />
 
     // Solution
-    <Component1 />
+    // <Component1 />
+
+    // useRef
+    // <UseRef/>
+
+    // useReducer
+    <CounterApp/>
   );
 }
 
