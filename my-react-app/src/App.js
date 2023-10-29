@@ -3,7 +3,7 @@ import MyForm from "./MyForm";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Contact from "./pages/Contact";
-import Home from "./pages/Home";
+// import Home from "./pages/Home";
 import Blogs from "./pages/Blogs";
 import NoPage from "./pages/NoPage";
 import Todos from "./ReactMemo/Todo";
@@ -20,6 +20,7 @@ import UseRef from "./hooks/Component4.js";
 import CounterApp from "./hooks/CounterApp";
 import Component5 from "./hooks/Component5";
 import Component6 from "./hooks/Component6";
+import Home from "./hooks/Home";
 
 function App() {
   // React Memo
@@ -113,7 +114,10 @@ function App() {
     // <Component5 />
 
     // useMemo
-    <Component6 />
+    // <Component6 />
+
+    // Custom Hooks
+    <Home />
   );
 }
 

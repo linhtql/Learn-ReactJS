@@ -121,4 +121,11 @@ The useMemo Hook can be used to kepp expensive, resource intensive functions fro
 --> The useMemo Hook accepts a second parameter to declare dependencies. The expensive function will
 only run when its dependencies have changed.
 
--------------------- useMemo --------------------
+-------------------- Custom Hooks --------------------
+Hooks are reusable functions
+When you have component logic that needs to be used by multiple components, we can extract
+that logic to a custom Hook.
+
+Custom Hooks start with "use". Example: useFetch
+
+// Build a Hook
