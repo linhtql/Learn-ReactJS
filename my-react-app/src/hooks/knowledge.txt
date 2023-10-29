@@ -111,3 +111,14 @@ Problem: One reason to use useCallback is to prevent a component from re-renderi
 have changed.
 
 
+-------------------- useMemo --------------------
+The React useMemo Hook returns a memoized value
+--> like useCallback but it returns a memoized value.
+
+Perfomance 
+The useMemo Hook can be used to kepp expensive, resource intensive functions from needlessly running.
+
+--> The useMemo Hook accepts a second parameter to declare dependencies. The expensive function will
+only run when its dependencies have changed.
+
+-------------------- useMemo --------------------
